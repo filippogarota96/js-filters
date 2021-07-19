@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Filters</title>
+</head>
+<body>
+
+<!-- Interfaccia per il caricamento img -->
+  <main>
+     
+    <div class="upload" id="upload">
+      <label class="custom-file-upload">
+        <input type="file" />
+        <i class="fas fa-cloud-upload-alt"></i>
+      </label>
+    </div>
+      <div class="img-container" id="cnt">
+        <img src="" id="myImg" alt="">
+      </div>
+  <!-- menu dei filtri immagine -->
+  <div class="filters-menu" id="filters">
+    <ul>
+      <li>
+        <button class="filter-btn">Greyscale</button><br>
+        <input type="range" class="filter__value" id="greyscale" name="greyscale" value="0" >
+      </li>
+
+      <li>
+        <button class="filter-btn">Saturate</button><br>
+        <input type="range" class="filter__value" id="saturate" name="saturate"  value="0">
+      </li>
+
+      <li>
+        <button class="filter-btn">Sepia</button><br>
+        <input type="range" class="filter__value" id="saturate" name="saturate"  value="0">
+      </li>
+
+      <li>
+        <button class="filter-btn">Invert</button><br>
+        <input type="range" class="filter__value" id="saturate" name="saturate"  value="0">
+      </li>
+
+      <li>
+        <button class="filter-btn">Contrast</button><br>
+        <input type="range" class="filter__value" id="saturate" name="saturate"  value="0">
+      </li>
+
+      <li>
+        <button class="filter-btn">Brightness</button><br>
+        <input type="range" class="filter__value" id="saturate" name="saturate"  value="0">
+      </li>
+
+      <li>
+        <button class="filter-btn">Blur</button><br>
+        <input type="number" class="filter__value" id="saturate" name="saturate" min="1" max="10">
+      </li>
+      
+      <li>
+        <button class="filter-btn">Hue Rotate</button><br>
+        <input type="number" class="filter__value" id="saturate" name="saturate" min="-360" max="360">
+      </li>
+      
+    </ul>
+  </div>
+  </main>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
