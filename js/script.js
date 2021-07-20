@@ -1,14 +1,7 @@
 
 //show hide inputs
 
-// function hideToggle() {
-//   var x = document.getElementById("filter__value");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } else {
-//       x.style.display = "none";
-//     }
-//   }
+
 
 // caricamento dell'immagine
 
@@ -26,7 +19,11 @@ window.addEventListener('load', function () {
       upload.style.display = "none";
       imgCnt.style.display = "block";
       filters.style.display = "block";
+      
+      
+      //modifica dinamica dei filtri tramite input
       const img = document.getElementById("myImg");
+      
       const greyscale = document.getElementById("greyscale");
       const saturate = document.getElementById("saturate");
       const sepia = document.getElementById("sepia");
@@ -70,7 +67,87 @@ window.addEventListener('load', function () {
         img.style.filter = "hue-rotate(" + hue.value + "deg)";
       });
       
+      const greyBtn = document.getElementById("grey__btn");
+      greyBtn.addEventListener('click', () => {
+        
+        if (greyscale.style.display === 'none') {
+          greyscale.style.display = 'block';
+        } else {
+          greyscale.style.display = 'none';
+        }
+      });
+      
+      
+      
+      const satBtn = document.getElementById("sat__btn");
+      satBtn.addEventListener('click', () => {
+
+        if (saturate.style.display === 'none') {
+          saturate.style.display = 'block';
+        } else {
+          saturate.style.display = 'none';
+        }
+      });
+      const sepBtn = document.getElementById("sepia__btn");
+      sepBtn.addEventListener('click', () => {
+
+        if (sepia.style.display === 'none') {
+          sepia.style.display = 'block';
+        } else {
+          sepia.style.display = 'none';
+        }
+      });
+      const invertBtn = document.getElementById("invert__btn");
+      invertBtn.addEventListener('click', () => {
+
+        if (invert.style.display === 'none') {
+          invert.style.display = 'block';
+        } else {
+          invert.style.display = 'none';
+        }
+      });
+      const contrastBtn = document.getElementById("contrast__btn");
+      contrastBtn.addEventListener('click', () => {
+
+        if (contrast.style.display === 'none') {
+          contrast.style.display = 'block';
+        } else {
+          contrast.style.display = 'none';
+        }
+      });
+      const brightBtn = document.getElementById("bright__btn");
+
+      brightBtn.addEventListener('click', () => {
+
+        if (brightness.style.display === 'none') {
+          brightness.style.display = 'block';
+        } else {
+          brightness.style.display = 'none';
+        }
+      });
+      const blurBtn = document.getElementById("blur__btn");
+
+      blurBtn.addEventListener('click', () => {
+
+        if (blur.style.display === 'none') {
+          blur.style.display = 'block';
+        } else {
+          blur.style.display = 'none';
+        }
+      });
+      const hueBtn = document.getElementById("hue__btn");
+
+      hueBtn.addEventListener('click', () => {
+
+        if (hue.style.display === 'none') {
+          hue.style.display = 'block';
+        } else {
+          hue.style.display = 'none';
+        }
+      });
+        
     }
+
   });
 });
 

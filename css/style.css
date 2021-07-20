@@ -40,6 +40,7 @@ body{
 .filters-menu li {
   color: white;
   margin: 0 2%;
+  width: 100px;
 }
 
 .filters-menu .filter__value {
@@ -94,4 +95,16 @@ input[type="file"] {
   filter: brightness(0%);
   filter: blur(0px);
   filter: hue-rotate(0deg);
+}
+
+#greyscale, 
+#rotate,
+#saturate,
+#sepia,
+#invert,
+#contrast, 
+#brightness,
+#blur,
+#hue {
+  display: none;
 }
